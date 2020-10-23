@@ -1,0 +1,6 @@
+sudo: required
+services: 
+    - docker
+script:
+    - docker build -t blemine/ci_testing .
+    - docker images blemine/ci_just_a_test
