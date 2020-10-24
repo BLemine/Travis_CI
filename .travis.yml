@@ -8,6 +8,6 @@ before_deploy:
     - docker login -u sherlocklemine -p Apzoei102938
 deploy:
     provider: script
-    script: docker push blemine/ci_just_a_test
+    script: docker push sherlocklemine/ci_just_a_test
     on: 
         branch: master
