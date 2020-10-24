@@ -1,2 +1,2 @@
-# node-docker
-Simple node and express docker 
+# About
+Simple CI implementation with Travis-CI and Docker with a Nodejs app and mongodb

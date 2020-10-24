@@ -2,12 +2,12 @@ sudo: required
 services: 
     - docker
 script:
-    - docker build -t sherlocklemine/ci_testing .
-    - docker images sherlocklemine/ci_testing
+    - docker build -t <username>/ci_testing .
+    - docker images <username>/ci_testing
 before_deploy:
-    - docker login -u sherlocklemine -p Apzoei102938
+    - docker login -u <username> -p <password>
 deploy:
     provider: script
-    script: docker push sherlocklemine/ci_testing
+    script: docker push <username>/ci_testing
     on: 
         branch: master
