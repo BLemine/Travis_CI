@@ -2,8 +2,8 @@ sudo: required
 services: 
     - docker
 script:
-    - docker build -t blemine/ci_testing .
-    - docker images blemine/ci_just_a_test
+    - docker build -t sherlocklemine/ci_testing .
+    - docker images sherlocklemine/ci_just_a_test
 before_deploy:
     - docker login -u sherlocklemine -p Apzoei102938
 deploy:
